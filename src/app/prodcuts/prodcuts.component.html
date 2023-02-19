@@ -13,6 +13,7 @@
                     <p class="card-text">like : {{p.like}}</p>
                     <button class="btn btn-primary" (click)="buy(i)" [disabled]="p.quantity==0">buy</button>
                     <button class="btn btn-success" (click)="like(i)">Like</button>
+                    <button class="btn btn-info" [routerLink]="['/product',p.id]">Details</button>
 
                 </div>
             </div>
